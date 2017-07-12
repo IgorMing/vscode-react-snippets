@@ -1,0 +1,119 @@
+{
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');"
+		],
+		"description": "Log output to console"
+	},
+	"Create a stateless component": {
+    	"prefix": "scomp",
+    	"body": [
+			"import React from 'react';",
+			"const $1 = () =>",
+			"\t$2",
+			"export default $1;"
+		]
+	},
+	"Create a React component": {
+    	"prefix": "comp",
+    	"body": [
+			"import React, { Component } from 'react';",
+			"export default class $1 extends Component {",
+			"\trender () {",
+			"\t\treturn (",
+			"\t\t\t$2",
+			"\t\t);",
+			"\t}",
+			"}"
+		]
+	},
+	"Import a exported variable": {
+    	"prefix": "impvar",
+    	"body": "import { $1 } from '$2';"
+	},
+	"Import a default exported variable from absolute library": {
+    	"prefix": "imp",
+    	"body": "import $1 from '$1';"
+	},
+	"Import a default exported variable from a directory": {
+    	"prefix": "impdir",
+    	"body": "import $1 from './$1';"
+	},
+	"Create a high order component": {
+    	"prefix": "hoc",
+    	"body": [
+			"import React, { Component } from 'react';",
+			"import { connect } from 'react-redux';",
+			"\nclass ${1:ComponentName} extends Component {",
+			"\trender() {",
+			"\t\treturn(",
+			"\t\t\t$3",
+			"\t\t);",
+			"\t}",
+			"}",
+			"\nconst mapStateToProps = ({ $2 }) => ({ $2 });",
+			"\nexport default connect(mapStateToProps, null)($1);"
+		]
+	},
+	"Create an simple action": {
+    	"prefix": "action",
+    	"body": [
+			"import { $2 } from './types';",
+			"\nexport const $1 = () => {",
+			"\treturn {",
+			"\t\tpayload: {$3},",
+			"\t\ttype: $2",
+			"\t};",
+			"};"
+		]
+	},
+	"Create an thunk action": {
+    	"prefix": "thunk",
+    	"body": [
+			"import { $2 } from './types';",
+			"\nexport const $1 = () => {",
+			"\treturn (dispatch) => {",
+			"\t\tdispatch({",
+			"\t\t\tpayload: $3,",
+			"\t\t\ttype: $2,",
+			"\t\t});",
+			"\t};",
+			"};"
+		]
+	},
+	"Create a reducer": {
+    	"prefix": "reducer",
+    	"body": [
+			"import { ${1:Action} } from '${2:Directory}';",
+			"\nconst INITIAL_STATE = {};",
+			"\n/**",
+			"* @param {Object} state - Default aplication state",
+			"* @param {Object} action - Action from action creator",
+			"* @returns {Object} New state",
+			"*/",
+			"export default (state = INITIAL_STATE, action) => {",
+			"\tswitch (action.type) {",
+			"\t\tcase $1: return state;",
+			"\t\tdefault: return state;",
+			"\t}",
+			"};"
+		]
+	},
+	"Create a duck": {
+    	"prefix": "duck",
+    	"body": [
+			"// Actions",
+			"const ${1:ActionName} = '${2:Resource}/$1';",
+			"\n// Reducer",
+			"export default (state = {}, action) => {",
+			"\tswitch (action.type) {",
+			"\t\tcase $1: return state;",
+			"\t\tdefault: return state;",
+			"\t}",
+			"};",
+			"\n// Action Creators",
+			"export const ${3:ActionCreator} = () => {};"
+		]
+	}
+}
