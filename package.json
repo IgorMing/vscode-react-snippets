@@ -3,7 +3,7 @@
   "displayName": "Useful React Snippets",
   "version": "0.0.1",
   "description": "Snippets from VSCode to help you to code faster!",
-  "main": "javascript.json",
+	"icon": "images/react.png",
   "repository": {
 		"type": "git",
 		"url": "git@github.com:IgorMing/vscode-react-snippets.git"
@@ -12,7 +12,7 @@
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/javascript.json"
 			}
 		]
 	},
