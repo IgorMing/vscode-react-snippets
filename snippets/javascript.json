@@ -1,54 +1,65 @@
 {
 	"Print to console": {
 		"prefix": "log",
+		"description": "Simple 'console.log();' print",
 		"body": [
-			"console.log('$1');"
-		],
-		"description": "Log output to console"
+			"console.log($1);$0"
+		]
 	},
 	"Create a stateless component": {
-    	"prefix": "scomp",
+		"prefix": "scomp",
+		"description": "A stateless component",
     	"body": [
 			"import React from 'react';",
 			"const $1 = () =>",
-			"\t$2",
+			"\t$0",
 			"export default $1;"
 		]
 	},
 	"Create a React component": {
-    	"prefix": "comp",
+		"prefix": "comp",
+		"description": "A React component",
     	"body": [
 			"import React, { Component } from 'react';",
-			"export default class $1 extends Component {",
+			"\nexport default class $1 extends Component {",
 			"\trender () {",
 			"\t\treturn (",
-			"\t\t\t$2",
+			"\t\t\t$0",
 			"\t\t);",
 			"\t}",
 			"}"
 		]
 	},
 	"Import a exported variable": {
-    	"prefix": "impvar",
-    	"body": "import { $1 } from '$2';"
+		"prefix": "impvar",
+		"description": "Import a exported variable from a library",
+    	"body": "import { $1 } from '$2';\n\n$0"
 	},
 	"Import a default exported variable from absolute library": {
-    	"prefix": "imp",
-    	"body": "import $1 from '$1';"
+		"prefix": "imp",
+		"description": "Import a default exported variable from a library",
+    	"body": "import $1 from '$1';\n\n$0"
 	},
 	"Import a default exported variable from a directory": {
-    	"prefix": "impdir",
-    	"body": "import $1 from './$1';"
+		"prefix": "impdir",
+		"description": "Import a default exported variable from a directory",
+    	"body": "import $1 from './$1';\n\n$0"
+	},
+	"Import a exported variable from a directory": {
+		"prefix": "impvardir",
+		"description": "Import a exported variable from a directory",
+    	"body": "import { $1 } from './$2';\n\n$0"
 	},
 	"Create a high order component": {
-    	"prefix": "hoc",
+		"prefix": "hoc",
+		"description": "Create an entire high order component",
     	"body": [
 			"import React, { Component } from 'react';",
 			"import { connect } from 'react-redux';",
 			"\nclass ${1:ComponentName} extends Component {",
 			"\trender() {",
 			"\t\treturn(",
-			"\t\t\t$3",
+			"\t\t\t$0",
 			"\t\t);",
 			"\t}",
 			"}",
@@ -57,25 +68,27 @@
 		]
 	},
 	"Create an simple action": {
-    	"prefix": "action",
+		"prefix": "action",
+		"description": "Create an action, returning an object",
     	"body": [
 			"import { $2 } from './types';",
 			"\nexport const $1 = () => {",
 			"\treturn {",
-			"\t\tpayload: {$3},",
+			"\t\tpayload: {$0},",
 			"\t\ttype: $2",
 			"\t};",
 			"};"
 		]
 	},
 	"Create an thunk action": {
-    	"prefix": "thunk",
+		"prefix": "thunk",
+		"description": "Create a thunk action, returning a function",
     	"body": [
 			"import { $2 } from './types';",
 			"\nexport const $1 = () => {",
 			"\treturn (dispatch) => {",
 			"\t\tdispatch({",
-			"\t\t\tpayload: $3,",
+			"\t\t\tpayload: $0,",
 			"\t\t\ttype: $2,",
 			"\t\t});",
 			"\t};",
@@ -83,7 +96,8 @@
 		]
 	},
 	"Create a reducer": {
-    	"prefix": "reducer",
+		"prefix": "reducer",
+		"description": "Create a simple reducer",
     	"body": [
 			"import { ${1:Action} } from '${2:Directory}';",
 			"\nconst INITIAL_STATE = {};",
@@ -97,11 +111,12 @@
 			"\t\tcase $1: return state;",
 			"\t\tdefault: return state;",
 			"\t}",
-			"};"
+			"};$0"
 		]
 	},
 	"Create a duck": {
-    	"prefix": "duck",
+		"prefix": "duck",
+		"description": "Create an entire redux flow, with ducks concept",
     	"body": [
 			"// Actions",
 			"const ${1:ActionName} = '${2:Resource}/$1';",
@@ -113,7 +128,63 @@
 			"\t}",
 			"};",
 			"\n// Action Creators",
-			"export const ${3:ActionCreator} = () => {};"
+			"export function ${3:ActionCreator} () {",
+			"\t$0",
+			"};"
+		]
+	},
+	"Component Will Mount": {
+		"prefix": "cwm",
+		"description": "ComponentWillMount Lifecycle",
+    	"body": [
+			"ComponentWillMount() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"Component Did Mount": {
+		"prefix": "cdm",
+		"description": "ComponentDidMount Lifecycle",
+    	"body": [
+			"ComponentDidMount() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"Component Will Update": {
+		"prefix": "cwu",
+		"description": "ComponentWillUpdate Lifecycle",
+    	"body": [
+			"ComponentWillUpdate(nextProps, nextState) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"Component Did Update": {
+		"prefix": "cdu",
+		"description": "ComponentDidUpdate Lifecycle",
+    	"body": [
+			"ComponentDidUpdate(prevProps, prevState) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"Component Will Receive Props": {
+		"prefix": "cwrp",
+		"description": "ComponentWillReceiveProps Lifecycle",
+    	"body": [
+			"ComponentWillReceiveProps(nextProps) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"Component Will Unmount": {
+		"prefix": "cwu",
+		"description": "ComponentWillUnmount Lifecycle",
+    	"body": [
+			"ComponentWillUnmount() {",
+			"\t$0",
+			"}"
 		]
 	}
 }

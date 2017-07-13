@@ -1,26 +1,28 @@
 {
-	"name": "useful-react-snippets",
-  "displayName": "Useful React Snippets",
-  "version": "0.0.1",
-  "description": "Snippets from VSCode to help you to code faster!",
-	"icon": "images/react.png",
-  "repository": {
-		"type": "git",
-		"url": "git@github.com:IgorMing/vscode-react-snippets.git"
-	},
-	"contributes": {
-		"snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets/javascript.json"
-			}
-		]
-	},
-  "author": "Igor Ming de Mesquita <igor.ming@gmail.com>",
-	"publisher": "igorming",
-	"engines": {
-		"vscode": "^0.10.5"	
-	},
-	"categories": ["Snippets"],
-  "license": "MIT"
+    "name": "useful-react-snippets",
+    "displayName": "Useful React Snippets",
+    "version": "0.0.3",
+    "description": "Snippets from VSCode to help you to code faster!",
+    "icon": "images/react.png",
+    "repository": {
+        "type": "git",
+        "url": "IgorMing/vscode-react-snippets.git"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    },
+    "author": "Igor Ming de Mesquita <igor.ming@gmail.com>",
+    "publisher": "igorming",
+    "engines": {
+        "vscode": "^0.10.5"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "license": "MIT"
 }
