@@ -26,7 +26,7 @@ Following below the available snippets
 | `cwu`  | ComponentWillUpdate Lifecycle |
 | `cdu`  | ComponentDidUpdate Lifecycle |
 | `cwrp`  | ComponentWillReceiveProps Lifecycle |
-| `cwu`  | ComponentWillUnmount Lifecycle |
+| `cwun`  | ComponentWillUnmount Lifecycle |
 
 ---
 

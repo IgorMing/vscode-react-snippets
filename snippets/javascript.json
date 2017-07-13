@@ -179,7 +179,7 @@
 		]
 	},
 	"Component Will Unmount": {
-		"prefix": "cwu",
+		"prefix": "cwun",
 		"description": "ComponentWillUnmount Lifecycle",
     	"body": [
 			"ComponentWillUnmount() {",
