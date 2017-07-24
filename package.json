@@ -1,7 +1,7 @@
 {
     "name": "useful-react-snippets",
     "displayName": "Useful React Snippets",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Snippets from VSCode to help you to code faster!",
     "icon": "images/react.png",
     "repository": {

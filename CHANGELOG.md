@@ -1,7 +1,15 @@
 # Change Log
-All notable changes to the "useful-react-snippets" extension will be documented in this file.
+All notable changes to the "useful-react-snippets" extension, below versioned.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.0]
+### Added
+- All regular features
+- Lifecycles snippets
 
-## [Unreleased]
-- Initial release
+## [1.0.1]
+### Changed
+- Minor change on README.md
+
+## [1.0.2]
+### Added
+- Added ShouldComponentUpdate lifecycle
