@@ -186,5 +186,14 @@
 			"\t$0",
 			"}"
 		]
+	},
+	"Should Component Update": {
+		"prefix": "scu",
+		"description": "ShouldComponentUpdate Lifecycle",
+    	"body": [
+			"ShouldComponentUpdate(nextProps, nextState) {",
+			"\t$0",
+			"}"
+		]
 	}
 }

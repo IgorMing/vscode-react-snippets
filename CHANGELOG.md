@@ -10,6 +10,6 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Changed
 - Minor change on README.md
 
-## [1.0.2]
+## [1.0.2]/[1.0.3]/[[1.0.4]]
 ### Added
 - Added ShouldComponentUpdate lifecycle
