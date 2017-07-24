@@ -12,8 +12,8 @@ Following below the available snippets
 | `log`   | A simple console.log(); |
 | `scomp` | Stateless component creation |
 | `comp`  | React component creation |
-| `impvar`| Import of a exported variable |
-| `imp`   | Import a default exported variable from absolute library |
+| `impvar`| Import an exported variable |
+| `imp`   | Import a default exported variable from an absolute library |
 | `impdir`| Import a default exported variable from a directory |
 | `impvardir`| Import a exported variable from a directory |
 | `hoc`   | High order component creation |
