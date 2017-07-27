@@ -137,7 +137,7 @@
 		"prefix": "cwm",
 		"description": "ComponentWillMount Lifecycle",
     	"body": [
-			"ComponentWillMount() {",
+			"componentWillMount() {",
 			"\t$0",
 			"}"
 		]
@@ -146,7 +146,7 @@
 		"prefix": "cdm",
 		"description": "ComponentDidMount Lifecycle",
     	"body": [
-			"ComponentDidMount() {",
+			"componentDidMount() {",
 			"\t$0",
 			"}"
 		]
@@ -155,7 +155,7 @@
 		"prefix": "cwu",
 		"description": "ComponentWillUpdate Lifecycle",
     	"body": [
-			"ComponentWillUpdate(nextProps, nextState) {",
+			"componentWillUpdate(nextProps, nextState) {",
 			"\t$0",
 			"}"
 		]
@@ -164,7 +164,7 @@
 		"prefix": "cdu",
 		"description": "ComponentDidUpdate Lifecycle",
     	"body": [
-			"ComponentDidUpdate(prevProps, prevState) {",
+			"componentDidUpdate(prevProps, prevState) {",
 			"\t$0",
 			"}"
 		]
@@ -173,7 +173,7 @@
 		"prefix": "cwrp",
 		"description": "ComponentWillReceiveProps Lifecycle",
     	"body": [
-			"ComponentWillReceiveProps(nextProps) {",
+			"componentWillReceiveProps(nextProps) {",
 			"\t$0",
 			"}"
 		]
@@ -182,7 +182,7 @@
 		"prefix": "cwun",
 		"description": "ComponentWillUnmount Lifecycle",
     	"body": [
-			"ComponentWillUnmount() {",
+			"componentWillUnmount() {",
 			"\t$0",
 			"}"
 		]
@@ -191,7 +191,7 @@
 		"prefix": "scu",
 		"description": "ShouldComponentUpdate Lifecycle",
     	"body": [
-			"ShouldComponentUpdate(nextProps, nextState) {",
+			"shouldComponentUpdate(nextProps, nextState) {",
 			"\t$0",
 			"}"
 		]

@@ -13,3 +13,8 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ## [1.0.2]/[1.0.3]/[[1.0.4]]
 ### Added
 - Added ShouldComponentUpdate lifecycle
+
+## [1.0.5]
+### Changed
+- Fixed bugs on lifecycle syntax
+- Changed the 'author' structure on package.json
