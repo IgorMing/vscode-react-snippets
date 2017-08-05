@@ -1,7 +1,7 @@
 {
     "name": "useful-react-snippets",
     "displayName": "Useful React Snippets",
-    "version": "1.0.5",
+    "version": "1.0.8",
     "description": "Snippets from VSCode to help you to code faster!",
     "icon": "images/react.png",
     "repository": {
@@ -13,6 +13,10 @@
             {
                 "language": "javascript",
                 "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/javascript.json"
             }
         ]
     },
@@ -21,6 +25,30 @@
         "email": "igor.ming@gmail.com"
     },
     "publisher": "igorming",
+    "keywords": [
+        "snippets",
+        "react",
+        "redux",
+        "es6",
+        "javascript"
+    ],
+    "badges": [
+        {
+            "url": "https://vsmarketplacebadge.apphb.com/version-short/igorming.useful-react-snippets.svg",
+            "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
+            "description": "Version"
+        },
+        {
+            "url": "https://vsmarketplacebadge.apphb.com/installs-short/igorming.useful-react-snippets.svg",
+            "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
+            "description": "Install Count"
+        },
+        {
+            "url": "https://vsmarketplacebadge.apphb.com/rating-short/igorming.useful-react-snippets.svg",
+            "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
+            "description": "Rating"
+        }
+    ],
     "engines": {
         "vscode": "^0.10.5"
     },

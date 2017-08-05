@@ -1,3 +1,7 @@
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/igorming.useful-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets)
+[![Install](https://vsmarketplacebadge.apphb.com/installs-short/igorming.useful-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/igorming.useful-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets)
+
 # VS Code React Snippets
 
 Snippets in JSON format specifically to be used on VS Code Editor.
