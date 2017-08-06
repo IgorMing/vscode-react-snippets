@@ -27,3 +27,8 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Changed
 - Included a line after import on stateless component creation
 - More information on README.md (badges)
+
+## [1.0.9]
+### Changed
+- Fixed some syntax bugs on imports snippets
+- Add braces scope to stateless function creation

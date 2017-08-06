@@ -11,8 +11,11 @@
 		"description": "A stateless component",
     	"body": [
 			"import React from 'react';",
-			"\nconst $1 = () =>",
-			"\t$0",
+			"\nconst $1 = () => {",
+			"\treturn (",
+			"\t\t$0",
+			"\t);",
+			"}\n",
 			"export default $1;"
 		]
 	},
@@ -33,22 +36,22 @@
 	"Import a exported variable": {
 		"prefix": "impvar",
 		"description": "Import a exported variable from a library",
-    	"body": "import { $1 } from '$2';\n\n$0"
+    	"body": "import { $1 } from '$2';$0"
 	},
 	"Import a default exported variable from absolute library": {
 		"prefix": "imp",
 		"description": "Import a default exported variable from a library",
-    	"body": "import $1 from '$1';\n\n$0"
+    	"body": "import $1 from '$1';$0"
 	},
 	"Import a default exported variable from a directory": {
 		"prefix": "impdir",
 		"description": "Import a default exported variable from a directory",
-    	"body": "import $1 from './$1';\n\n$0"
+    	"body": "import $1 from './$1';$0"
 	},
 	"Import a exported variable from a directory": {
 		"prefix": "impvardir",
 		"description": "Import a exported variable from a directory",
-    	"body": "import { $1 } from './$2';\n\n$0"
+    	"body": "import { $1 } from './$2';$0"
 	},
 	"Create a high order component": {
 		"prefix": "hoc",
