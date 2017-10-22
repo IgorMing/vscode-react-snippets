@@ -33,6 +33,24 @@
 			"}"
 		]
 	},
+	"Create a React Native component": {
+		"prefix": "rncomp",
+		"description": "A React Native component",
+    	"body": [
+			"import React, { Component } from 'react';",
+			"import { Text, StyleSheet, View } from 'react-native';",
+			"\nexport default class $1 extends Component {",
+			"\trender () {",
+			"\t\treturn (",
+			"\t\t\t<View>",
+			"\t\t\t\t<Text>$0</Text>",
+			"\t\t\t</View>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"\nconst styles = StyleSheet.flatten({});"
+		]
+	},
 	"Import a exported variable": {
 		"prefix": "impvar",
 		"description": "Import a exported variable from a library",

@@ -32,3 +32,11 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Changed
 - Fixed some syntax bugs on imports snippets
 - Add braces scope to stateless function creation
+
+## [1.1.0]
+### Added
+- React native component creation
+
+## [1.1.1]
+### Added
+- React native component documentation
