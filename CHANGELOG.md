@@ -40,3 +40,8 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ## [1.1.1]
 ### Added
 - React native component documentation
+
+## [1.1.2]
+### Changed
+- Snippets syntax typo
+- Details on reducer return (reducer and duck)
