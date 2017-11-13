@@ -32,6 +32,8 @@ Following below the available snippets
 | `cdu`  | ComponentDidUpdate Lifecycle |
 | `cwrp`  | ComponentWillReceiveProps Lifecycle |
 | `cwun`  | ComponentWillUnmount Lifecycle |
+| `prp`  | PropType Declaration |
+| `prpr`  | Required PropType Declaration |
 
 ---
 

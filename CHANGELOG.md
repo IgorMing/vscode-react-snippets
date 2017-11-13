@@ -45,3 +45,11 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Changed
 - Snippets syntax typo
 - Details on reducer return (reducer and duck)
+
+## [1.2.0]
+### Added
+- PropTypes declarations
+
+## [1.2.1]
+### Added
+- Documentation related to propTypes declarations

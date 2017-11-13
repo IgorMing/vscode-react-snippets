@@ -224,5 +224,15 @@
 			"\t$0",
 			"}"
 		]
+	},
+	"PropType": {
+		"prefix": "prp",
+		"description": "PropType declaration",
+    	"body": "PropTypes.$0"
+	},
+	"Required PropType": {
+		"prefix": "prpr",
+		"description": "Required PropType declaration",
+    	"body": "PropTypes.${1:type}.isRequired$0"
 	}
 }
