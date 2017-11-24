@@ -53,3 +53,7 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ## [1.2.1]
 ### Added
 - Documentation related to propTypes declarations
+
+## [1.2.2]
+### Changed
+- Changed console.log(); to become unique with vscode Intellisense default

@@ -1,6 +1,6 @@
 {
 	"Print to console": {
-		"prefix": "log",
+		"prefix": "clog",
 		"description": "Simple 'console.log();' print",
 		"body": [
 			"console.log($1);$0"

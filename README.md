@@ -13,7 +13,7 @@ Following below the available snippets
 
 | Command  | Description |
 | :------- | :---------- |
-| `log`   | A simple console.log(); |
+| `clog`   | A simple console.log(); |
 | `scomp` | Stateless component creation |
 | `comp`  | React component creation |
 | `rncomp`  | React Native component creation |
