@@ -57,3 +57,8 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ## [1.2.2]
 ### Changed
 - Changed console.log(); to become unique with vscode Intellisense default
+
+## [1.2.3]
+### Added
+- Console error
+- Console warning

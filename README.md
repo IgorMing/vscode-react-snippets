@@ -14,6 +14,8 @@ Following below the available snippets
 | Command  | Description |
 | :------- | :---------- |
 | `clog`   | A simple console.log(); |
+| `cwarn`   | A simple console.warn(); |
+| `cerr`   | A simple console.error(); |
 | `scomp` | Stateless component creation |
 | `comp`  | React component creation |
 | `rncomp`  | React Native component creation |
