@@ -62,3 +62,8 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Added
 - Console error
 - Console warning
+
+## [1.3.0]
+### Added
+- Map state to props function
+- Map dispatch to props variable

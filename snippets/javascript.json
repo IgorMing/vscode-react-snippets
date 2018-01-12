@@ -248,5 +248,15 @@
 		"prefix": "prpr",
 		"description": "Required PropType declaration",
     	"body": "PropTypes.${1:type}.isRequired$0"
+	},
+	"Map state to props": {
+		"prefix": "mstp",
+		"description": "A function that returns an object",
+    	"body": "const mapStateToProps = ({ $1 }) => ({ $1 });$0"
+	},
+	"Map dispatch to props": {
+		"prefix": "mdtp",
+		"description": "A variable that returns an object",
+    	"body": "const mapDispatchToProps = { ${1:Action} };$0"
 	}
 }

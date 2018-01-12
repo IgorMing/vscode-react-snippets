@@ -36,6 +36,8 @@ Following below the available snippets
 | `cwun`  | ComponentWillUnmount Lifecycle |
 | `prp`  | PropType Declaration |
 | `prpr`  | Required PropType Declaration |
+| `mstp`  | Map state to props - A function that returns an object |
+| `mdtp`  | Map dispatch to props - A variable that returns an object |
 
 ---
 
