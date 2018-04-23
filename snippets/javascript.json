@@ -173,7 +173,7 @@
 			"\n// Action Creators",
 			"export function ${3:ActionCreator}() {",
 			"\t$0",
-			"};"
+			"}"
 		]
 	},
 	"Component Will Mount": {

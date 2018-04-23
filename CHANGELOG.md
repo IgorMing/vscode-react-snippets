@@ -67,3 +67,7 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Added
 - Map state to props function
 - Map dispatch to props variable
+
+## [1.4.1]
+### Changed
+- On duck snippet, I removed the unused trailining comma after the function declaration
