@@ -258,5 +258,20 @@
 		"prefix": "mdtp",
 		"description": "A variable that returns an object",
     	"body": "const mapDispatchToProps = { ${1:Action} };$0"
+	},
+	"High order function": {
+		"prefix": "hof",
+		"description": "Create a wrapper function which returns another component",
+		"body": [
+			"import React, { Component } from 'react';",
+			"\nfunction ${1:HighOrderFunction}(WrappedComponent) {",
+			"\treturn class WrapperComponent extends Component {",
+			"\t\t$0",
+			"\t\trender() {",
+			"\t\t\treturn <WrappedComponent {...this.props} />;",
+			"\t\t}",
+			"\t};",
+			"}"
+		]
 	}
 }

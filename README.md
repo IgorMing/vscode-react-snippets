@@ -38,6 +38,7 @@ Following below the available snippets
 | `prpr`  | Required PropType Declaration |
 | `mstp`  | Map state to props - A function that returns an object |
 | `mdtp`  | Map dispatch to props - A variable that returns an object |
+| `hof`  | Wrapper function, used as a high order one |
 
 ---
 
