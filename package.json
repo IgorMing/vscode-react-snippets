@@ -1,7 +1,7 @@
 {
     "name": "useful-react-snippets",
     "displayName": "Useful React Snippets",
-    "version": "1.5",
+    "version": "1.4.4",
     "description": "Snippets for VSCode to help you to code faster!",
     "icon": "images/react.png",
     "repository": {
@@ -16,6 +16,14 @@
             },
             {
                 "language": "javascriptreact",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "typescriptreact",
                 "path": "./snippets/javascript.json"
             }
         ]
