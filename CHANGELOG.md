@@ -80,7 +80,7 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Added
 - Support for typescript (.ts and .tsx files)
 
-## [1.5.1]/[1.5.2]
+## [1.5.1] to [1.5.4]
 ### Changed
 - Basic warning comment for deprecated React lifecycles
 
