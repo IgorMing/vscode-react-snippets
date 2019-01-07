@@ -72,6 +72,20 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 ### Changed
 - On duck snippet, I removed the unused trailining comma after the function declaration
 
-## [1.5]
+## [1.4.4]
 ### Added
 - Snippet high order function
+
+## [1.5]
+### Added
+- Support for typescript (.ts and .tsx files)
+
+## [1.5.1]
+### Changed
+- Basic warning comment for deprecated React lifecycles
+
+### Added
+- New lifecycles which comes from 16.3+ version
+
+### Removed
+- Awkward `hoc` snippet that I made in past. Which is basically the same as the `hof` snippet. Now, `hoc` returns exactly what the `hof` snippet was returning before

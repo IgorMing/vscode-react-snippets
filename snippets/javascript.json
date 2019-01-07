@@ -85,23 +85,6 @@
 		"description": "Import a exported variable from a directory",
     	"body": "import { $1 } from './$2';$0"
 	},
-	"Create a high order component": {
-		"prefix": "hoc",
-		"description": "Create an entire high order component",
-    	"body": [
-			"import React, { Component } from 'react';",
-			"import { connect } from 'react-redux';",
-			"\nclass ${1:ComponentName} extends Component {",
-			"\trender() {",
-			"\t\treturn(",
-			"\t\t\t$0",
-			"\t\t);",
-			"\t}",
-			"}",
-			"\nconst mapStateToProps = ({ $2 }) => ({ $2 });",
-			"\nexport default connect(mapStateToProps, null)($1);"
-		]
-	},
 	"Create an simple action": {
 		"prefix": "action",
 		"description": "Create an action, returning an object",
@@ -176,16 +159,20 @@
 			"}"
 		]
 	},
-	"Component Will Mount": {
+	"(DEPRECATED) Lifecycle: ComponentWillMount": {
 		"prefix": "cwm",
 		"description": "ComponentWillMount Lifecycle",
     	"body": [
+			"/**",
+			"* Warning: This lifecycle is currently deprecated, and will be removed in React version 17+",
+			"More details here: https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html",
+			"*/",
 			"componentWillMount() {",
 			"\t$0",
 			"}"
 		]
 	},
-	"Component Did Mount": {
+	"Lifecycle: ComponentDidMount": {
 		"prefix": "cdm",
 		"description": "ComponentDidMount Lifecycle",
     	"body": [
@@ -194,34 +181,42 @@
 			"}"
 		]
 	},
-	"Component Will Update": {
+	"(DEPRECATED) Lifecycle: ComponentWillUpdate": {
 		"prefix": "cwu",
 		"description": "ComponentWillUpdate Lifecycle",
     	"body": [
+			"/**",
+			"* Warning: This lifecycle is currently deprecated, and will be removed in React version 17+",
+			"More details here: https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html",
+			"*/",
 			"componentWillUpdate(nextProps, nextState) {",
 			"\t$0",
 			"}"
 		]
 	},
-	"Component Did Update": {
+	"Lifecycle: ComponentDidUpdate": {
 		"prefix": "cdu",
 		"description": "ComponentDidUpdate Lifecycle",
     	"body": [
-			"componentDidUpdate(prevProps, prevState) {",
+			"componentDidUpdate(prevProps, prevState, snapshot) {",
 			"\t$0",
 			"}"
 		]
 	},
-	"Component Will Receive Props": {
+	"(DEPRECATED) Lifecycle: ComponentWillReceiveProps": {
 		"prefix": "cwrp",
 		"description": "ComponentWillReceiveProps Lifecycle",
     	"body": [
+			"/**",
+			"* Warning: This lifecycle is currently deprecated, and will be removed in React version 17+",
+			"More details here: https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html",
+			"*/",
 			"componentWillReceiveProps(nextProps) {",
 			"\t$0",
 			"}"
 		]
 	},
-	"Component Will Unmount": {
+	"Lifecycle: ComponentWillUnmount": {
 		"prefix": "cwun",
 		"description": "ComponentWillUnmount Lifecycle",
     	"body": [
@@ -230,7 +225,7 @@
 			"}"
 		]
 	},
-	"Should Component Update": {
+	"Lifecycle: ShouldComponentUpdate": {
 		"prefix": "scu",
 		"description": "ShouldComponentUpdate Lifecycle",
     	"body": [
@@ -259,8 +254,8 @@
 		"description": "A variable that returns an object",
     	"body": "const mapDispatchToProps = { ${1:Action} };$0"
 	},
-	"High order function": {
-		"prefix": "hof",
+	"High order component": {
+		"prefix": "hoc",
 		"description": "Create a wrapper function which returns another component",
 		"body": [
 			"import React, { Component } from 'react';",
@@ -273,5 +268,23 @@
 			"\t};",
 			"}"
 		]
-	}
+	},
+	"Lifecycle: getDerivedStateFromProps": {
+		"prefix": "gdsfp",
+		"description": "static getDerivedStateFromProps Lifecycle",
+		"body": [
+			"static getDerivedStateFromProps(props, state) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"Lifecycle: getSnapshotBeforeUpdate": {
+		"prefix": "gsbu",
+		"description": "getSnapshotBeforeUpdate Lifecycle. The value returned by this function will be passed as the third parameter into componentDidUpdate() Lifecycle",
+		"body": [
+			"getSnapshotBeforeUpdate(prevProps, prevState) {",
+			"\t$0",
+			"}"
+		]
+	},
 }

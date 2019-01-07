@@ -23,22 +23,23 @@ Following below the available snippets
 | `imp`   | Import a default exported variable from an absolute library |
 | `impdir`| Import a default exported variable from a directory |
 | `impvardir`| Import a exported variable from a directory |
-| `hoc`   | High order component creation |
 | `action`| Simple action creation (returns an object) |
 | `thunk` | Thunk action creation (returns a function) |
 | `reducer`| Simple reducer creation |
 | `duck`  | An entire module following the [ducks](https://github.com/erikras/ducks-modular-redux) pattern |
-| `cwm`  | ComponentWillMount Lifecycle |
-| `cdm`  | ComponentDidMount Lifecycle |
-| `cwu`  | ComponentWillUpdate Lifecycle |
-| `cdu`  | ComponentDidUpdate Lifecycle |
-| `cwrp`  | ComponentWillReceiveProps Lifecycle |
-| `cwun`  | ComponentWillUnmount Lifecycle |
+| `cdm`  | Lifecycle: ComponentDidMount |
+| `cdu`  | Lifecycle: ComponentDidUpdate |
+| `cwun`  | Lifecycle: ComponentWillUnmount |
+| `gdsfp`  | Lifecycle: static getDerivedStateFromProps |
+| `gsbu`  | Lifecycle: getSnapshotBeforeUpdate |
+| `cwm`  | (DEPRECATED) Lifecycle: UNSAFE_ComponentWillMount |
+| `cwu`  | (DEPRECATED) Lifecycle: UNSAFE_ComponentWillUpdate |
+| `cwrp`  | (DEPRECATED) Lifecycle: UNSAFE_ComponentWillReceiveProps |
 | `prp`  | PropType Declaration |
 | `prpr`  | Required PropType Declaration |
 | `mstp`  | Map state to props - A function that returns an object |
 | `mdtp`  | Map dispatch to props - A variable that returns an object |
-| `hof`  | Wrapper function, used as a high order one |
+| `hoc`  | Wrapper function, AKA High order component |
 
 ---
 
