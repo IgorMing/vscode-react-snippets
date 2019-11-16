@@ -254,6 +254,22 @@
     "description": "getSnapshotBeforeUpdate Lifecycle. The value returned by this function will be passed as the third parameter into componentDidUpdate() Lifecycle",
     "body": ["getSnapshotBeforeUpdate(prevProps, prevState) {", "\t$0", "}"]
   },
+  "Lifecycle: componentDidCatch": {
+    "prefix": "cdc",
+    "description": "componentDidCatch Lifecycle. A wrapper for the app catches any errors. Thank you @mdsadiq for suggesting this",
+    "body": ["componentDidCatch(error, errorInfo) {", "\t$0", "}"]
+  },
+  "Lifecycle: getDerivedStateFromError": {
+    "prefix": "gdsfe",
+    "description": "static getDerivedStateFromError Lifecycle",
+    "body": [
+      "static getDerivedStateFromError(error) {",
+      "\treturn {",
+      "\t\t${0:errorState}",
+      "\t}",
+      "}"
+    ]
+  },
   "useState's hook creation": {
     "prefix": "hookst",
     "description": "The creation of useState's hook",

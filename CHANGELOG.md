@@ -140,3 +140,10 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 
 - Specific snippets for typescript, adding types and interfaces
 - `hookst` snippet. Basically the `useState()` hook
+
+## [2.1.0]
+
+### Added
+
+- `getDerivedStateFromError` lifecycle
+- `componentDidCatch` lifecycle
