@@ -19,7 +19,7 @@
     "description": "A stateless component",
     "body": [
       "import React from 'react';",
-      "\nconst ${1:ComponentName} = () => {",
+      "\nconst ${1:ComponentName}: React.FC = () => {",
       "\treturn (",
       "\t\t$0",
       "\t);",
@@ -32,6 +32,9 @@
     "description": "A React component",
     "body": [
       "import React, { Component } from 'react';",
+      "\ninterface $1Props {",
+      "\t$2",
+      "}",
       "\nexport default class ${1:ComponentName} extends Component {",
       "\trender() {",
       "\t\treturn (",
@@ -47,6 +50,9 @@
     "body": [
       "import React, { Component } from 'react';",
       "import { Text, View } from 'react-native';",
+      "\ninterface $1Props {",
+      "\t$2",
+      "}",
       "\nexport default class ${1:ComponentName} extends Component {",
       "\trender() {",
       "\t\treturn (",
@@ -257,6 +263,6 @@
   "useState's hook creation": {
     "prefix": "hookst",
     "description": "The creation of useState's hook",
-    "body": "const [${1:value}, ${2:setValue}] = useState(${0:defaultValue});"
+    "body": "const [${1:value}, ${2:setValue}] = useState<${3:type}>(${0:defaultValue});"
   }
 }

@@ -1,68 +1,68 @@
 {
-    "name": "useful-react-snippets",
-    "displayName": "Useful React Snippets",
-    "version": "1.5.4",
-    "description": "Snippets for VSCode to help you to code faster!",
-    "icon": "images/react.png",
-    "repository": {
-        "type": "git",
-        "url": "IgorMing/vscode-react-snippets.git"
+  "name": "useful-react-snippets",
+  "displayName": "Useful React Snippets",
+  "version": "2.0.0",
+  "description": "Snippets for VSCode to help you to code faster! Either you're using Javascript or Typescript for writing it.",
+  "icon": "images/react.png",
+  "repository": {
+    "type": "git",
+    "url": "IgorMing/vscode-react-snippets.git"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript.json"
+      }
+    ]
+  },
+  "author": {
+    "name": "Igor Ming",
+    "email": "igor.ming@gmail.com"
+  },
+  "publisher": "igorming",
+  "keywords": [
+    "snippets",
+    "react",
+    "redux",
+    "es6",
+    "javascript",
+    "typescript"
+  ],
+  "badges": [
+    {
+      "url": "https://vsmarketplacebadge.apphb.com/version-short/igorming.useful-react-snippets.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
+      "description": "Version"
     },
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/javascript.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/javascript.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/javascript.json"
-            }
-        ]
+    {
+      "url": "https://vsmarketplacebadge.apphb.com/installs-short/igorming.useful-react-snippets.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
+      "description": "Install Count"
     },
-    "author": {
-        "name": "Igor Ming",
-        "email": "igor.ming@gmail.com"
-    },
-    "publisher": "igorming",
-    "keywords": [
-        "snippets",
-        "react",
-        "redux",
-        "es6",
-        "javascript",
-        "typescript"
-    ],
-    "badges": [
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/version-short/igorming.useful-react-snippets.svg",
-            "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
-            "description": "Version"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/installs-short/igorming.useful-react-snippets.svg",
-            "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
-            "description": "Install Count"
-        },
-        {
-            "url": "https://vsmarketplacebadge.apphb.com/rating-short/igorming.useful-react-snippets.svg",
-            "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
-            "description": "Rating"
-        }
-    ],
-    "engines": {
-        "vscode": "^0.10.5"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "license": "MIT"
+    {
+      "url": "https://vsmarketplacebadge.apphb.com/rating-short/igorming.useful-react-snippets.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=igorming.useful-react-snippets",
+      "description": "Rating"
+    }
+  ],
+  "engines": {
+    "vscode": "^0.10.5"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "license": "MIT"
 }
