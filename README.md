@@ -45,6 +45,6 @@ Easy shortcuts to help and expedite your code development.
 
 ---
 
-That's it for while
+That's it for now
 
 Enjoy!
