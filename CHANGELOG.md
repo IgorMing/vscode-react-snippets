@@ -150,6 +150,13 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 
 ## [3.0.0]
 
+### Changed
+
+- Improved some snippets
+- Add some new lifecycles
+
+## [4.0.0]
+
 ### Added
 
 - `effect` for useEffect hook
