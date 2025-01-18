@@ -147,3 +147,19 @@ All notable changes to the "useful-react-snippets" extension, below versioned.
 
 - `getDerivedStateFromError` lifecycle
 - `componentDidCatch` lifecycle
+
+## [3.0.0]
+
+### Added
+
+- `effect` for useEffect hook
+- `ieffect` for useEffect hook inline
+- `usest` for useState hook
+
+### Removed
+
+- All old and deprecated calls, like class components lifecycles and others
+
+### Changed
+
+- `scomp` now works better with its type, without using `React.FC`

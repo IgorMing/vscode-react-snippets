@@ -12,39 +12,22 @@ Easy shortcuts to help and expedite your code development.
 
 ## Following below the available snippets
 
-| Command     | Description                                                                                    |
-| :---------- | :--------------------------------------------------------------------------------------------- |
-| `clog`      | A simple console.log();                                                                        |
-| `cwarn`     | A simple console.warn();                                                                       |
-| `cerr`      | A simple console.error();                                                                      |
-| `scomp`     | Stateless component creation                                                                   |
-| `comp`      | React component creation                                                                       |
-| `rncomp`    | React Native component creation                                                                |
-| `impvar`    | Import an exported variable                                                                    |
-| `imp`       | Import a default exported variable from an absolute library                                    |
-| `impdir`    | Import a default exported variable from a directory                                            |
-| `impvardir` | Import a exported variable from a directory                                                    |
-| `action`    | Simple action creation (returns an object)                                                     |
-| `thunk`     | Thunk action creation (returns a function)                                                     |
-| `reducer`   | Simple reducer creation                                                                        |
-| `duck`      | An entire module following the [ducks](https://github.com/erikras/ducks-modular-redux) pattern |
-| `cdm`       | Lifecycle: ComponentDidMount                                                                   |
-| `cdu`       | Lifecycle: ComponentDidUpdate                                                                  |
-| `cwun`      | Lifecycle: ComponentWillUnmount                                                                |
-| `gdsfp`     | Lifecycle: static getDerivedStateFromProps                                                     |
-| `gsbu`      | Lifecycle: getSnapshotBeforeUpdate                                                             |
-| `cwm`       | (DEPRECATED) Lifecycle: UNSAFE_ComponentWillMount                                              |
-| `cwu`       | (DEPRECATED) Lifecycle: UNSAFE_ComponentWillUpdate                                             |
-| `cwrp`      | (DEPRECATED) Lifecycle: UNSAFE_ComponentWillReceiveProps                                       |
-| `prp`       | PropType Declaration                                                                           |
-| `prpr`      | Required PropType Declaration                                                                  |
-| `mstp`      | Map state to props - A function that returns an object                                         |
-| `mdtp`      | Map dispatch to props - A variable that returns an object                                      |
-| `hoc`       | Wrapper function, AKA High order component                                                     |
-| `hookst`    | useState hook creation                                                                         |
+| Command     | Description                                                 |
+| :---------- | :---------------------------------------------------------- |
+| `clog`      | A simple console.log();                                     |
+| `cwarn`     | A simple console.warn();                                    |
+| `cerr`      | A simple console.error();                                   |
+| `scomp`     | Create an arrow function react component                    |
+| `impvar`    | Import an exported variable                                 |
+| `imp`       | Import a default exported variable from an absolute library |
+| `impdir`    | Import a default exported variable from a directory         |
+| `impvardir` | Import a exported variable from a directory                 |
+| `effect`    | useEffect hook with a function scope                        |
+| `ieffect`   | useEffect hook but inline                                   |
+| `usest`     | useState hook creation                                      |
 
 ---
 
-That's it for now
+That's it for now.
 
 Enjoy!
